@@ -1,15 +1,13 @@
-import React, { Component} from "react";
+import React from 'react';
 import PageMain from './components/main/main';
 
-class App extends Component {
-  render(){
-    return(
+const App = (): React.ReactElement => {
+    return (
       <div className="App">
         <h1> Hello, World!</h1>
-        <PageMain></PageMain>
+        <PageMain/>
       </div>
     );
-  }
-}
+};
 
 export default App;

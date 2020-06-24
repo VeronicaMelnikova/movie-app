@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
 
-export interface Props {size: string; text: string};
-
-export function Button({text,size}: Props) {
-  return <button className={size}>{text}</button>;
+export type Props = {
+  size: string;
+  text: string;
 }
 
+export function Button({ text, size }: Props): React.ReactElement {
+  return <button className={size}>{text}</button>;
+}
