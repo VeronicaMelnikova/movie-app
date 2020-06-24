@@ -1,12 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
+import { Button } from '../button/button';
 
-import { Button } from "../button/button";
-
-export default function PageMain() {
+export default function PageMain(): React.ReactElement  {
   return (
     <main>
-      <input placeholder="Quentin Tarantino"></input>
-      <Button text="Search" size="big"></Button>
+      <input placeholder="Quentin Tarantino" />
+      <Button text="Search" size="big" />
     </main>
   );
 }
